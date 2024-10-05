@@ -54,8 +54,8 @@ const trackRequest = () => {
           <input type="text" placeholder="بحث" className="search-bar" />
           
         </div>
-        <div className=' d-flex  w-50  pt-8 justify-content-between '>
-       <div className=' px-4'> 
+        <div className=' d-flex  w-50  pt-8 justify-content-between iconnav '>
+       <div className=' px-4 '> 
      
        <Link to={"/About"}> <i class="fa-solid fa-bars"></i></Link>
        </div>
@@ -68,7 +68,7 @@ const trackRequest = () => {
 
       
 
-      <div className="right-section d-flex ">
+      <div className="right-section d-flex responsive ">
         
          
           <div className=' px-3 font-bold '> 

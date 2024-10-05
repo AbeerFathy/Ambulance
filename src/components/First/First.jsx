@@ -16,7 +16,7 @@ useEffect(() => {}, [])
 
       </h2>
       </div>
-      
+      <div className='line'></div>
       <div className='underlinesection'></div>
       <div className="row ">
         <div className="col-lg-6 pt-5">
@@ -72,24 +72,30 @@ useEffect(() => {}, [])
             <h3 className='font-bold  textfontn'>4.7</h3>
             
           </div>
-          <div className=' d-flex    ms-auto justify-content-around  bg-light w-50  py-2  border rounded-1 '>
-          <div className='d-flex'>
-            <h3> 8 ساعات</h3>
-            <i class="fa-regular fa-clock  "></i></div>
-        
-            <div className='d-flex'>    <h3>  ا05 اكتوبر 2024 </h3>
-            <i class="fa-regular fa-calendar  "></i></div>
-         </div>  
+          <div class="d-flex flex-column flex-md-row resi ms-auto justify-content-around bg-light w-100 py-2 border rounded-1 resposivefirst">
+  <div class="d-flex align-items-center mb-2 mb-md-0">
+    <i class="fa-regular fa-clock me-2"></i>
+    <h3 class="m-0">8 ساعات </h3>
+  </div>
+
+  <div class="d-flex align-items-center">
+    <i class="fa-regular fa-calendar me-2"></i>
+    <h3 class="m-0">05 اكتوبر 2024</h3>
+  </div>
+</div>
 
         
            
           
-          <div className=' text-muted font-bold fs-1 d-flex justify-content-end'> 16,500 LE</div>
-          <div className=' d-flex justify-content-end m3-5'
-          >
-       <Link to={"/Request"}>   <button class="btn  active  font-bold text-white " >للالتحاق بالدوره</button></Link>   </div>
-          
-         
+<div class="d-flex justify-content-end text-muted font-bold fs-1 resi">
+  16,500 LE
+</div>
+
+<div class="d-flex justify-content-end m-3 resi">
+  <Link to="/Request">
+    <button class="btn font-bold text-white">لالتحاق بالدوره</button>
+  </Link>
+</div>
           
     </div>
       </div>

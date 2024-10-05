@@ -51,7 +51,7 @@ useEffect(() => {}, [])
 
         {/* Right Section */} 
         <div className="col-md-3 ">
-          <div className=' d-flex justify-content-end  '>
+          <div className=' d-flex justify-content-end responsivefooter '>
           <button type="button" class="btn btn-warning  mx-3 "> <i class="fa-solid fa-phone"></i> 123 </button>
          
           <h5 className='  d-flex'>للتواصل والدعم</h5>

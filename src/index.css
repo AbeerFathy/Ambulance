@@ -145,54 +145,72 @@
   font-size: 0.8rem;
   color:orange;
 }
-/* For screens smaller than 768px (Tablets and smaller) */
-@media (max-width: 768px) {
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
   .navbar {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center align items */
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .left-section {
-    width: 100%; /* Full width */
-    justify-content: center; /* Center content */
-    margin-bottom: 10px; /* Space below left section */
+  .button-group {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .right-section {
-    text-align: center; /* Center text */
-    margin-bottom: 10px; /* Space below right section */
+    margin-top: 20px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .logo-img {
-    height: 40px; /* Adjust logo size for smaller screens */
-  }
-
-  .button-item,
-  .track-request,
-  .inquiries-button {
-    font-size: 0.8rem; /* Smaller font for buttons */
+  .navbar {
+    padding: 10px;
   }
 
   .search-bar {
-    width: 100%; /* Full-width search bar */
-    margin-top: 10px; /* Space above search bar */
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .right-section {
+    text-align: center;
+ 
   }
 }
 
-/* For screens smaller than 480px (Mobile size) */
 @media (max-width: 480px) {
-  .navbar {
-    padding: 8px; /* Reduce padding */
+  .button-group {
+    gap: 5px;
   }
+.responsive{
 
-  .logo span {
-    font-size: 0.9rem; /* Adjust font size for logo */
+margin: auto;
+}
+  .logo-img {
+    height: 50px;
+    width: 50px;
+ 
   }
+  .iconnav h1{width: 100%;}
+  .iconnav{margin:auto;
 
-  .logo p {
-    font-size: 0.7rem; /* Adjust font size for subtitle */
+
+width: 100%;}
+
+  .track-request, .inquiries-button {
+    width: 100%;
+    justify-content: center;
   }
 }
+/*HOME */
+
 header{
   background-image: linear-gradient( to bottom right ,rgba(68,13,171,0.768032212885154),rgba(68,13,171,0.768032212885154)),url(../src/assets/images/images.jpeg);
 height: 100vh;
@@ -239,6 +257,40 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
 }
 .size2{font-size: 1.5rem;}
 .textoverlap span{color: #184591;}
+.background{
+
+  display: flex;
+  flex-wrap: nowrap;
+  height:100vh;
+  margin: auto;
+  background-size:cover ;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(68,13,171,0.768032212885154),rgba(13, 28, 72, 0.9));
+     
+      background-position: center center;
+     }
+
+      .carousel-indicators [data-bs-target] {
+          box-sizing: content-box;
+          flex: 0 1 auto;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          padding: 0;
+          margin-right: 3px;
+          margin-left: 3px;
+          text-indent: -999px;
+          cursor: pointer;
+          background-color: #fff;
+          background-clip: padding-box;
+          border: 0;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          opacity: .5;
+          transition: opacity .6s ease;
+
+}
 
 /* For screens smaller than 1024px (Tablet size) */
 @media (max-width: 1024px) {
@@ -360,44 +412,52 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
   .layerposition img{width: 30%;}
 }
 .right-section p{color:#f2b50d;}
-/* =============================== */
-.background{
+/* footer */
 
-  display: flex;
-  flex-wrap: nowrap;
-  height:100vh;
-  margin: auto;
-  background-size:cover ;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(
-      rgba(68,13,171,0.768032212885154),rgba(13, 28, 72, 0.9));
-     
-      background-position: center center;
-     }
 
-      .carousel-indicators [data-bs-target] {
-          box-sizing: content-box;
-          flex: 0 1 auto;
-          width: 10px;
-          height: 10px;
-          border-radius: 50%;
-          padding: 0;
-          margin-right: 3px;
-          margin-left: 3px;
-          text-indent: -999px;
-          cursor: pointer;
-          background-color: #fff;
-          background-clip: padding-box;
-          border: 0;
-          border-top: 10px solid transparent;
-          border-bottom: 10px solid transparent;
-          opacity: .5;
-          transition: opacity .6s ease;
+@media (max-width: 768px) {
+  .footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
 
+  .footer .col-md-4, .footer .col-md-5, .footer .col-md-3 {
+    margin-bottom: 20px;
+  }
+
+  .footer .col-md-5 .social-icons {
+    justify-content: center;
+  }
+
+  .text-end {
+    text-align: center !important;
+  }
+.responsivefooter {display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+width: 70%;
+}
+ 
 }
 
+@media (max-width: 576px) {
+  .footer .container {
+    padding: 0 10px;
+  }
 
+  .footer .col-md-5 p, .footer .col-md-4 p, .footer ul li a {
+    font-size: 12px;
+  }
 
+  .footer .btn-warning {
+    font-size: 0.9rem;
+  }
+
+  .footer h5 {
+    font-size: 1.2rem;
+  }
+}
 
 /* =============================== */
 .About{height: 100vh;}
@@ -431,6 +491,16 @@ margin-top: 10px;}
 
 
 /* first */
+.firstAC{background-color: #f2f9ff;}
+.resi {
+  padding: 1rem;
+}
+
+/* Ensure icons and text align properly */
+.d-flex {
+  display: flex;
+  align-items: center;
+}
 
 .textfont{padding-right: 1rem;
   font-size: 1rem;
@@ -439,6 +509,54 @@ margin-top: 10px;}
 
 .coloricon{color:#f2b50d;}
 .firstAC .btn{background-color: #5631a3;}
+.line{width: 150px;
+height: 5px;
+background-color: #5631a3;
+border-radius: 10px;
+margin-left: auto;
+margin-right: 5px;}
+@media (max-width: 768px) {
+  .firstAC h1 {
+    font-size: 1.75rem;
+  }
+  
+  .firstAC h2 {
+    font-size: 1rem;
+  }
+
+  .course-highlights h3 {
+    font-size: 1rem;
+  }
+
+  .firstAC .resi {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .firstAC img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .firstAC h1 {
+    font-size: 1.5rem;
+  }
+
+  .firstAC h2 {
+    font-size: 0.9rem;
+  }
+  .firstAC h3{
+  text-align: end;}
+  .firstAC .resi {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
 /* request */
 .bgrequest{
   background-color:#6c3ad1; 
