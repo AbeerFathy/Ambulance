@@ -1,0 +1,448 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+ 
+ 
+
+ 
+ :root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, SFProLocalRange;
+  line-height: 1.5;
+  font-weight: 400;
+  --main-color:#5551ff;
+  --seconed-color:#f2b50d;
+  --third-color:#0a6dc2;
+  --forth-color:#184591;
+  color-scheme: light dark;
+ 
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.row{
+  @apply flex flex-wrap py-5 px-3
+}
+/* Main navigation container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Left section for buttons */
+.left-section .button-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Buttons styling */
+.button-item {
+  display: flex;
+  align-items: center;
+  color: #6c3ad1;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.radiousicon{
+  width: 2rem;
+  height: 2rem;
+  background-color: #5631a3;
+  border-radius: 50%;
+
+}
+.button-item .icon {
+ 
+
+  border-radius: 50%;
+  margin-right: 5px;
+  font-size: 1rem;
+}
+
+/* Track request button styling */
+.track-request {
+  display: flex;
+  align-items: center;
+  background-color: #6c3ad1;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.track-request .icon {
+  margin-left: 5px;
+}
+
+.track-request:hover {
+  background-color: #5631a3;
+}
+
+/* Inquiries button styling */
+.inquiries-button {
+  display: flex;
+  align-items: center;
+  background-color: #f2f3f5;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.inquiries-button .icon {
+  margin-right: 5px;
+}
+
+.inquiries-button:hover {
+  background-color: #e1e2e5;
+}
+
+/* Center section for the search bar */
+.center-section {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.search-icon {
+  margin-left: 8px;
+  font-size: 1.2rem;
+  color: #6c3ad1;
+}
+
+/* Right section for the logo */
+.right-section .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.logo-img {
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.logo span {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.logo p {
+  font-size: 0.8rem;
+  color:orange;
+}
+/* For screens smaller than 768px (Tablets and smaller) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .left-section {
+    width: 100%; /* Full width */
+    justify-content: center; /* Center content */
+    margin-bottom: 10px; /* Space below left section */
+  }
+
+  .right-section {
+    text-align: center; /* Center text */
+    margin-bottom: 10px; /* Space below right section */
+  }
+
+  .logo-img {
+    height: 40px; /* Adjust logo size for smaller screens */
+  }
+
+  .button-item,
+  .track-request,
+  .inquiries-button {
+    font-size: 0.8rem; /* Smaller font for buttons */
+  }
+
+  .search-bar {
+    width: 100%; /* Full-width search bar */
+    margin-top: 10px; /* Space above search bar */
+  }
+}
+
+/* For screens smaller than 480px (Mobile size) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px; /* Reduce padding */
+  }
+
+  .logo span {
+    font-size: 0.9rem; /* Adjust font size for logo */
+  }
+
+  .logo p {
+    font-size: 0.7rem; /* Adjust font size for subtitle */
+  }
+}
+header{
+  background-image: linear-gradient( to bottom right ,rgba(68,13,171,0.768032212885154),rgba(68,13,171,0.768032212885154)),url(../src/assets/images/images.jpeg);
+height: 100vh;
+background-position: center center;
+background-size: cover;}
+.fontsize70{font-size: 70px;}
+
+
+
+ header .container {
+  
+  color: #fff;
+  line-height: 50px;
+  width: 60%;
+ 
+}
+.bannr-text{background: linear-gradient(to right,transparent 25%,burlywood);}
+.bannr-text h1 {
+  padding-right: 1rem;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.bannr-text p {
+   padding-right: 1rem;
+  font-size: 1.5rem;
+}
+.overlabhome {
+ 
+  background-image: url('../src/assets/images/4.png');
+  background-image: linear-gradient(
+      rgba(68,13,171,0.768032212885154),rgba(13, 28, 72, 0.9));
+}
+.fonttextH{
+  font-size: 1rem;
+  color: #0a6dc2;
+}
+.layerposition{position :absolute;
+  width: 27rem;
+bottom:9rem;
+left:5rem;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;}
+.textsize{font-size: 5rem;
+}
+.size2{font-size: 1.5rem;}
+.textoverlap span{color: #184591;}
+
+/* For screens smaller than 1024px (Tablet size) */
+@media (max-width: 1024px) {
+  header {
+      height: 80vh;
+  }
+
+  header .container {
+      width: 80%;
+  }
+
+  .bannr-text h1 {
+      font-size: 3rem;
+  }
+
+  .bannr-text p {
+      font-size: 1.2rem;
+  }
+
+  .fontsize70 {
+      font-size: 50px;
+  }
+
+  .layerposition {
+      width: 18rem;
+      bottom: 7rem;
+      left: 2rem;
+  }
+
+  .textsize {
+      font-size: 3rem;
+  }
+  .size2 {
+    font-size: 20px;
+}
+.layerposition img{width: 20%;}
+}
+
+/* For screens smaller than 768px (Mobile size) */
+@media (max-width: 768px) {
+  header {
+      height: 60vh;
+     
+  }
+
+  header .container {
+      width: 70%;
+  }
+
+  .bannr-text h1 {
+      font-size: 2.5rem;
+  }
+
+  .bannr-text p {
+      font-size: 1rem;
+  }
+
+  .fontsize70 {
+      font-size: 40px;
+  }
+
+  .layerposition {
+      width: 18rem;
+      bottom: 5rem;
+      left: 1rem;
+  }
+
+  .textsize {
+      font-size: 3rem;
+  }
+}
+
+/* For screens smaller than 480px (Extra small mobile size) */
+@media (max-width: 480px) {
+  header {
+      height: 60vh;
+  }
+
+  header .container {
+      width: 60%;
+      line-height: 20px;
+    
+
+  }
+  
+.textoverlap h3{font-size:10px;
+}
+.textoverlap span{font-size:.5rem;
+}
+.textoverlap h4{font-size:.5rem;
+}
+
+
+  .bannr-text h1 {
+      font-size: 1rem;
+  }
+
+  .bannr-text p {
+      font-size: 0.5rem;
+  }
+
+  .fontsize70 {
+      font-size: 30px;
+  }
+
+  .layerposition {
+      width: 25%;
+      bottom: 8rem;
+      left:1rem;
+  }
+
+  .textsize {
+      font-size: 1.5rem;
+  }
+
+  .size2 {
+      font-size: 6px;
+  }
+  .layerposition img{width: 30%;}
+}
+.right-section p{color:#f2b50d;}
+/* =============================== */
+.background{
+
+  display: flex;
+  flex-wrap: nowrap;
+  height:100vh;
+  margin: auto;
+  background-size:cover ;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(68,13,171,0.768032212885154),rgba(13, 28, 72, 0.9));
+     
+      background-position: center center;
+     }
+
+      .carousel-indicators [data-bs-target] {
+          box-sizing: content-box;
+          flex: 0 1 auto;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          padding: 0;
+          margin-right: 3px;
+          margin-left: 3px;
+          text-indent: -999px;
+          cursor: pointer;
+          background-color: #fff;
+          background-clip: padding-box;
+          border: 0;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          opacity: .5;
+          transition: opacity .6s ease;
+
+}
+
+
+
+
+/* =============================== */
+.About{height: 100vh;}
+.bgAbout{background-color:#5631a3;}
+ .About  h3{
+color:#f2b50d
+
+}
+.About i{color:#f2b50d}
+.About button:Hover{background-color:#5631c8;}
+
+@media (max-width: 768px) {
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+
+  .banner-text p {
+    font-size: 1.2rem;
+  }
+}
+.footer{
+  background-color: #161e36
+}
+.footer small{color:#f2b50d;}
+.color{color:#f2b50d;}
+.footer  .colorbutton{background-color:#6c3ad1;}
+.hoverfooter:hover  
+
+{background-color: #bde3ff;
+margin-top: 10px;}
+
+
+/* first */
+
+.textfont{padding-right: 1rem;
+  font-size: 1rem;
+  font-weight: bold;}
+.textfontn{ font-size: 1.5rem;}
+
+.coloricon{color:#f2b50d;}
+.firstAC .btn{background-color: #5631a3;}
+/* request */
+.bgrequest{
+  background-color:#6c3ad1; 
+}
+.coloriconrequest{color: white;}
+
+
