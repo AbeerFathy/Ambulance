@@ -469,15 +469,35 @@ color:#f2b50d
 .About i{color:#f2b50d}
 .About button:Hover{background-color:#5631c8;}
 
-@media (max-width: 768px) {
-  .banner-text h1 {
-    font-size: 2rem;
-  }
-
-  .banner-text p {
-    font-size: 1.2rem;
+@media (max-width: 1200px) {
+  .col {
+    flex: 0 0 48%; /* Two columns on medium screens */
   }
 }
+
+@media (max-width: 768px) {
+  .col {
+    flex: 0 0 100%; /* One column on small screens */
+  }
+
+
+}
+
+
+@media (max-width: 576px) {
+  h3 {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+
+  .container {
+    padding: 10px;
+  }}
+ /* =============================== */
 .footer{
   background-color: #161e36
 }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import image2 from '../../assets/images/2.jpeg'
 import image1 from '../../assets/images/1.png'
+
 export default function About() {
 
 const [counter, setcounter] = useState(0);
