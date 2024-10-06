@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Logout from './components/Logout/Logout'
+
 import Register from './components/Register/Register'
 import Request from './components/Request/Request'
 import Wishlist from './components/Wishlist/Wishlist'
@@ -28,7 +28,7 @@ let x= createBrowserRouter([
   {index:true,element:<Home/> },
 
   {path:' Navbar', element:<Navbar/>},
-  {path:'Logout', element:<Logout/>},
+  
   {path:'Request', element: <Request/>},
   {path:'Register', element:<Register/>},
   {path:'Wishlist', element:<Wishlist/>},

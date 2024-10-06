@@ -5,7 +5,7 @@ import { Navigate, useNavigate } from 'react-router-dom';
 import { NavLink,Link } from 'react-router-dom'
 
 import * as yup from 'yup'
-import { Usercontext } from '../Context/Usercontext';
+
 
 
 export default function Register() {

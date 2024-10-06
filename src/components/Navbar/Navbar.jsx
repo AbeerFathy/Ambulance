@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import logo from '../../assets/images/ambulance.png'
 import { Link, Navigate, NavLink, useNavigate } from 'react-router-dom';
-import Usercontextprovider, { Usercontext } from '../Context/Usercontext';
+
 
 import { FaCommentAlt } from "react-icons/fa";
 import { FaUserPlus, FaSignInAlt, FaGlobe, FaClock ,FaSearch} from "react-icons/fa";
